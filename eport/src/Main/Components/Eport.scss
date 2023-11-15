@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Pixelify+Sans:wght@400;500&family=Playpen+Sans:wght@300&family=Poppins&family=Sedgwick+Ave+Display&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+.container {
+  background-color: white;
+  color: black;
+}
+
+#light {
+  background-color: #fff;
+}
+
+#dark {
+  background-color: #000;
+}
+
+.main-header ul {
+  display: flex;
+  justify-content: right;
+  gap: 14px;
+  list-style-type: none;
+  padding: 1vw;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.main-header ul li {
+  padding: 15px;
+}
+
+.main-header ul a {
+  text-decoration: none;
+  color: black;
+  transition: 1s;
+}
+
+.main-header ul a:hover {
+  font-size: 22px;
+}
+
+.welcome {
+  margin: 13.2vw;
+}
+
+.welcome header h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.welcome h3 {
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 32px;
+  padding: 10px;
+}
+
+.welcome h4 {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.6s;
+  font-size: 23px;
+}
+
+.welcome h4:hover {
+  font-size: 22px;
+}
+
+/* ABOUT ME SECTION */
+
+.about-me {
+  padding: 13.2vw;
+}
+
+.about-me div {
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 1vw;
+}
+
+.about-me h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 46px;
+}
+
+.about-me article {
+  padding: 25px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* ABOUT ME SECTION END */
+
+/* PROJECT SECTION */
+
+.projects {
+  padding: 13.2vw;
+}
+
+.projects h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 46px;
+}
+
+.project-class {
+  display: flex;
+  display: inline-block;
+  padding: 6%;
+  margin-left: 4vw;
+}
+
+.project-class figure {
+  display: flex;
+  width: fit-content;
+}
+
+.project-class figcaption {
+  font-weight: 600;
+  padding: 5px;
+}
+
+#netflix,
+#huddle {
+  width: 22vw;
+  border-radius: 7px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateY(-10%);
+  transition: all 1.7s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
