@@ -1,5 +1,4 @@
 import React from "react";
-import "/Front End Work/React Eport/eport/src/Main/Components/Eport.scss"
 import huddleimg from './assets/Huddle Website.png'
 
 const Huddle = () => {
