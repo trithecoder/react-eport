@@ -5,16 +5,17 @@ import Projects from "./Components/Projects";
 import Welcome from "./Components/Welcome";
 import Header from "./Components/Header";
 import WeatherApp from "./Components/Weather";
+import { motion, AnimatePresence, animate, useScroll, transform, useTransform } from "framer-motion";
 
 const Eport = () => {
   return (
-    <div className="container">
+    <motion.div className="container">
       <Header />
       <Welcome />
       <About />
       <Projects />
       <WeatherApp />
-    </div>
+    </motion.div>
   );
 };
 
