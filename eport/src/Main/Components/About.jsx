@@ -1,9 +1,10 @@
 import React from "react";
 import "../Components/Eport.scss"
+import { motion, AnimatePresence, animate, useScroll, transform, useTransform } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="about">
+    <motion.div className="about" initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1} }}>
       <section id="about" className="about-me">
         <div>
           <header>
@@ -14,11 +15,11 @@ const About = () => {
             unique designs and expanding on my creativity in unique ways, I also
             like challenging myself and solving said challenges! I currently do
             work in Shopify Liquid, Word Press, Freelance, HTML 5, CSS 3,
-            JavaScript and I am learning React!
+            JavaScript, React, and I am learning Framer Motion!
           </article>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
