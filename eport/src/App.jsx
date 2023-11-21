@@ -5,7 +5,7 @@ import { motion, AnimatePresence, animate, useScroll, transform, useTransform } 
 function App() {
   
   return (
-    <motion.div initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1} }}><Eport/></motion.div>
+    <motion.div initial={{opacity: 0}} whileInView={{opacity: 1, transition: {ease: 'easeIn',duration: 1} }}><Eport/></motion.div>
   );
 }
 

@@ -8,9 +8,11 @@ import {
   transform,
   useTransform,
 } from "framer-motion";
+import {BrowserView, MobileView} from 'react-device-detect';
 
 const Header = () => {
   return (
+    <BrowserView>
     <motion.div
       className="header"
       initial={{ opacity: 0 }}
@@ -19,24 +21,25 @@ const Header = () => {
       <nav className="main-header">
         <header></header>
         <ul>
-          <a href="https://github.com/trithecoder">
+          <motion.a href="https://github.com/trithecoder" whileHover={{scale: 0.9}}>
             <li>Github</li>
-          </a>
-          <a href="#about">
+          </motion.a>
+          <motion.a href="#about" whileHover={{scale: 0.9}}>
             <li>About</li>
-          </a>
-          <a href="#projects">
+          </motion.a>
+          <motion.a href="#projects" whileHover={{scale: 0.9}}>
             <li>Projects</li>
-          </a>
-          <a href="">
+          </motion.a>
+          <motion.a href="" whileHover={{scale: 0.9}}>
             <li>Contact</li>
-          </a>
-          <a href="#checkweather">
+          </motion.a>
+          <motion.a href="#checkweather" whileHover={{scale: 0.9}}>
             <li>Check Weather</li>
-          </a>
+          </motion.a>
         </ul>
       </nav>
     </motion.div>
+    </BrowserView>
   );
 };
 

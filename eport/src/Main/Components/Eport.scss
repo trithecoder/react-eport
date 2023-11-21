@@ -17,6 +17,7 @@
   background-color: black;
   color: white;
   align-items: center;
+  overflow: hidden;
 }
 
 #light {
@@ -45,10 +46,6 @@
   text-decoration: none;
   color: white;
   transition: 1s;
-}
-
-.main-header ul a:hover {
-  font-size: 22px;
 }
 
 .welcome {
@@ -136,6 +133,44 @@
   display: inline-block;
   padding: 6%;
   
+  figure {
+    figure {
+      border: 1px solid white;
+      border-radius: 14px;
+      padding: 10px;
+    }
+    div {
+      .huddle-text {
+        position: absolute;
+        left: 1150px;
+        top: 2125px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: black;
+        p{
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+
+      .netflix-text {
+        position: absolute;
+        left: 495px;
+        top: 2125px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: black;
+        p{
+          font-size: 14px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 .project-sect {
@@ -163,6 +198,40 @@
   border-radius: 7px;
 }
 
+.btn {
+  width: 40px;
+  height: 40px;
+  border-style: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  height: 45px;
+  margin: none;
+  border-radius: 16px;
+  /*background-color: turquoise;*/
+}
+
+.navList {
+  padding: 10px 35px 100px 35px;
+  display: flex;
+}
+
+.nav-item {
+  font-size: 20px;
+  list-style: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
 .hidden {
   opacity: 0;
   filter: blur(1px);
@@ -177,6 +246,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+  .container {
+    overflow: hidden;
+  }
 
   .main-header ul {
     display: flex;
@@ -270,7 +343,6 @@
     justify-content: space-evenly;
 
     .content-wrapper {
-      border: 1px solid;
       padding: 9vw;
       border-radius: 15px;
       display: flex;

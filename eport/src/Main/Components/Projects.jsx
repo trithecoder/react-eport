@@ -2,12 +2,31 @@ import React, { useEffect, useState } from "react";
 import "../Components/Eport.scss";
 import Huddle from "./Projects/Huddle";
 import Netflix from "./Projects/Netflix";
-import { motion, AnimatePresence, animate, useScroll, transform, useTransform } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  animate,
+  useScroll,
+  transform,
+  useTransform,
+} from "framer-motion";
 
 const Projects = () => {
-
   return (
-    <motion.div className="projects" initial={{opacity: 0}} whileInView={{opacity: 1, transition: {duration: 1} }}>
+    <motion.div
+      className="projects"
+      initial={{
+        opacity: 0,
+        x: -100
+      }}
+      whileInView={{ 
+        opacity: 1, 
+        transition: { 
+          duration: 1 
+      }, 
+      x: 0 
+    }}
+    >
       <section id="projects" className="project-sect">
         <div className="content-wrapper">
           <div>
@@ -17,7 +36,7 @@ const Projects = () => {
             <nav>
               <div className="project-class">
                 <figure>
-                  <Netflix/>
+                  <Netflix />
                 </figure>
               </div>
               <div className="project-class">
