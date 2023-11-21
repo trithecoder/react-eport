@@ -82,7 +82,20 @@ function WeatherApp() {
   return (
     <div id="container" className="container">
       <div className="app-wrapper">
-        <div className="content">
+        <motion.div
+          className="content"
+          initial={{
+            opacity: 0,
+            y: 75,
+          }}
+          whileInView={{
+            opacity: 1,
+            transition: {
+              duration: 1,
+            },
+            y: 0,
+          }}
+        >
           <header>
             <h1>Check the Weather!</h1>
           </header>
@@ -119,7 +132,7 @@ function WeatherApp() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
