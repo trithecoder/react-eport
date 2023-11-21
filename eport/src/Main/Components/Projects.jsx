@@ -13,20 +13,7 @@ import {
 
 const Projects = () => {
   return (
-    <motion.div
-      className="projects"
-      initial={{
-        opacity: 0,
-        x: -100
-      }}
-      whileInView={{ 
-        opacity: 1, 
-        transition: { 
-          duration: 1 
-      }, 
-      x: 0 
-    }}
-    >
+    <motion.div className="projects">
       <section id="projects" className="project-sect">
         <div className="content-wrapper">
           <div>

@@ -249,6 +249,8 @@
 
   .container {
     overflow: hidden;
+    height: 100%;
+    width: 100%;
   }
 
   .main-header ul {
@@ -341,6 +343,7 @@
     padding: 13.2vw;
     display: flex;
     justify-content: space-evenly;
+    overflow: hidden;
 
     .content-wrapper {
       padding: 9vw;
