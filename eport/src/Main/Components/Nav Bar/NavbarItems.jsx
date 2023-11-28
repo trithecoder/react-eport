@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Navbar.css";
+import "./Navbar.scss";
 
 const Navbar = ({ isToggled }) => {
 
