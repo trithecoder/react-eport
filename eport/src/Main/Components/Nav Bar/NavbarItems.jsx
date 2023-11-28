@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import "./Navbar.scss";
+import "./Navbar.css";
 
 const Navbar = ({ isToggled }) => {
-  
+
   const Github = (
     <motion.a href="https://github.com/trithecoder">Github</motion.a>
   );
